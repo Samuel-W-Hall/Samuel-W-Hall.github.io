@@ -12,7 +12,7 @@
 
 nav {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     background: #222222;
     display: flex;
     height: 80px;
@@ -26,17 +26,18 @@ nav {
 }
 
 nav ul {
-    margin: 20px 0;
-    width: 100%;
-    display: inline-block;
+    max-width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
 }
 
 nav ul li {
-    display: inline-block;
     list-style: none;
-    margin: 15px 5px;
+    margin: 10px;
     color: #fff;
-    font-size: 14px;
+    font-size: min(3.73vw, 30px);
 }
 
 nav ul li:hover {
