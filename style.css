@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Varela', sans-serif;
 }
 
 .content {
@@ -38,7 +38,7 @@
     position: relative;
 }
 
-.navbar .menu-list {
+.menu-list {
     max-width: 100%;
     display: inline-flex;
     justify-content: space-between;
@@ -47,13 +47,19 @@
 
 .menu-list li {
     list-style: none;
-    margin-left: 25px;
-    color: #fff;
-    font-size: min(3.73vw, 30px);
-    transition: all 0.3s ease;
 }
 
-nav ul li:hover {
+.menu-list li a {
+    margin-left: 25px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    /* text-shadow: -1px 1px #222222; */
+}
+
+.menu-list li a:hover {
     color: #ffe493;
     cursor: pointer;
 }
