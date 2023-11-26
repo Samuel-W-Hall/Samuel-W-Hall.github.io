@@ -50,7 +50,7 @@
 }
 
 .menu-list li a {
-    margin-left: 25px;
+    margin-left: 30px;
     color: #fff;
     font-size: 30px;
     font-weight: 500;
@@ -126,9 +126,10 @@
     .navbar .menu-list.active {
         left: 0%;
     }
-
-    .navbar .menu-list li {
+    .menu-list li {
         margin-top: 45px;
-        font-size: 23px;
+    }
+    .menu-list li a {
+        font-size: 25px;
     }
 }
