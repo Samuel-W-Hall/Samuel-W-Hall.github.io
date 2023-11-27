@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Varela', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .content {
@@ -33,9 +33,19 @@
 }
 
 .navbar .logo {
-    height: 150px;
+    /* height: 150px; */
+    /* width: 250px; */
     cursor: pointer;
     position: relative;
+}
+
+/* ONLY WHEN LOGO IS TEXT */
+.navbar .logo a {
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: 400;
 }
 
 .menu-list {
@@ -53,7 +63,7 @@
     margin-left: 30px;
     color: #fff;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 300;
     text-decoration: none;
     transition: all 0.3s ease;
     /* text-shadow: -1px 1px #222222; */
@@ -76,9 +86,10 @@
     padding: 40px 0;
 }
 
-.about .title {
+.about .title h1{
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 500;
+    color: #222222;
 }
 
 .about p {
@@ -100,7 +111,7 @@
 }
 
 
-@media (max-width: 868px) {
+@media (max-width: 980px) {
     body.disabledScroll {
         overflow: hidden;
     }
