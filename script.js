@@ -17,5 +17,7 @@ cancelBtn.onclick =() => {
 }
 
 window.onscroll = () => {
-    this.scrollY > 30 ? navbar.classList.add('sticky') : navbar.classList.remove('sticky');
+    if (body.classList.contains("home")) {
+        this.scrollY > 30 ? navbar.classList.add('sticky') : navbar.classList.remove('sticky');
+    }
 }

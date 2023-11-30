@@ -1,3 +1,5 @@
+/* ----------UNIVERSAL---------- */
+
 * {
     margin: 0;
     padding: 0;
@@ -73,6 +75,8 @@
     color: #ffe493;
     cursor: pointer;
 }
+
+/* ----------INDEX (HOME)---------- */
 
 .banner {
     height: 100vh;
@@ -159,4 +163,9 @@
         font-size: 25px;
         margin-left: 0;
     }
+}
+
+/* ----------INDEX (HOME)---------- */
+.contact {
+    padding: 150px 0;
 }
