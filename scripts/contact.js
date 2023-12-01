@@ -33,6 +33,8 @@ const emptyFieldCheck = function(e) {
     if (inputVal == '') label.style.opacity = 0.5;
 }
 
+
+// ----------EVENT LISTENERS----------
 inputFields.forEach((field) => {
     const input = field.children[0];
     input.addEventListener('keypress', emptyLabel);
