@@ -32,14 +32,26 @@
         </div>
     </nav>
 
-    <div class="contact">
-        <div class="content">
-            <div class="title"><h1>Contact Form</h1></div>
-            <
-
-        </div>
+    <div class="content contact">
+        <div class="title"><h1>Contact Form</h1></div>
+        <form class="contact-form">
+            <div class="input-group">
+                <input type="text" id="name" required>
+                <label for="name">Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="10" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button class="send-btn">Send</button>
+        </form>
     </div>
 
-    <script src="../script.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/contact.js"></script>
 </body>
 </html>
