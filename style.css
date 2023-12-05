@@ -1,5 +1,63 @@
 /* ----------UNIVERSAL---------- */
 
+:root {
+    --dark-color: #FF7B7B;
+    --light-color: #7BC8FF;
+}
+
+/* ----------SVG ANIMATION---------- */
+svg {
+    /* border: green solid; */
+    /* height: 240px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    max-width: 750px;
+}
+
+.animated-background {
+    /* display: flex; */
+    width: 100%;
+}
+
+#darkGroup {
+    fill: var(--dark-color);
+}
+
+#lightGroup {
+    fill: var(--light-color);
+}
+
+#dark1,
+#dark2,
+#light1  {
+    transition: all 1s ease;
+}
+
+#dark2 {
+    transform: translateX(-130%);
+    opacity: 0;
+}
+
+
+
+#light1.scrolled {
+    transform: translateX(20%);
+}
+
+#dark1.scrolled {
+    transform: translateX(130%);
+    opacity: 0;
+}
+
+#dark2.scrolled {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +65,13 @@
     font-family: 'Rubik', sans-serif;
 }
 
+
 html {
     scroll-behavior: smooth;
+}
+
+.home {
+    overflow-x: hidden;
 }
 
 .content {
@@ -26,7 +89,7 @@ html {
 }
 
 .navbar.sticky {
-    background: #222222;
+    background: #383838;
     padding: 10px 0;
 }
 
@@ -97,20 +160,32 @@ html {
     height:100vh; /* fix for mobile browser address bar appearing disappearing */
     left:0;
     right:0;
-    z-index:-1; /* needed to keep in the background */
+    z-index:-5; /* needed to keep in the background */
     background: url("images/background.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
 }
 
+.background {
+    z-index: 0;
+    height: 240px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .section {
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 100px 30px;
+    position: relative;
 }
 
 .title {
-    padding: 30px 0px 70px;
+    padding: 30px 0px 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .title h1{
@@ -120,8 +195,10 @@ html {
 }
 
 .section p {
+    font-size: 20px;
     padding-top: 20px;
     text-align: justify;
+    z-index: 1;
 }
 
 .icon{
@@ -155,7 +232,7 @@ html {
        height: 100vh;
        width: 100%;
        max-width: 400px;
-       background: #222222;
+       background: #383838;
        display: block;
        padding: 40px 0;
        text-align: center;
@@ -170,6 +247,16 @@ html {
     .menu-list li a {
         font-size: 25px;
         margin-left: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .title h1 {
+        font-size: 60px;
+    }
+
+    .section p {
+        font-size: 25px;
     }
 }
 
@@ -221,8 +308,30 @@ label {
     padding: 4px;
 }
 
+/* ----------PROJECTS---------- */
+.projects {
+    z-index: -2;
+    position: relative;
+}
+
+
 /* ----------BLOG---------- */
 .blog {
     padding: 150px 0;
 }
 
+
+/* ----------Utility Classes---------- */
+.yellow {
+    background: #ffe493;
+}
+
+.white {
+    background: #fff;
+}
+
+.ebony {
+    background: #383838;
+}
+
+/* ---------- */

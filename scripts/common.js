@@ -30,9 +30,3 @@ menuBtn.addEventListener('click', function() {
 });
 
 cancelBtn.addEventListener('click', hideMenu);
-
-window.onscroll = () => {
-    if (body.classList.contains("home")) {
-        this.scrollY > 30 ? navbar.classList.add('sticky') : navbar.classList.remove('sticky');
-    }
-}
