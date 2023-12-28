@@ -28,15 +28,15 @@ const svg = document.getElementById('circles');
 const circles = svg.querySelectorAll('circle');
 
 // FIXME: ONLY WORKS ON VERY LEFT OF CIRCLES
-svg.addEventListener('click', (e) => {
-    console.log(e);
-    const colors = ['red', 'blue', 'green', 'orange', 'pink', 'purple'];
-    const rando = () => colors[Math.floor(Math.random()*colors.length)];
-    document.documentElement.style.cssText = `
-    --dark-color: ${rando()};
-    --light-color: ${rando()};
-    `
-})
+// svg.addEventListener('click', (e) => {
+//     console.log(e);
+//     const colors = ['red', 'blue', 'green', 'orange', 'pink', 'purple'];
+//     const rando = () => colors[Math.floor(Math.random()*colors.length)];
+//     document.documentElement.style.cssText = `
+//     --dark-color: ${rando()};
+//     --light-color: ${rando()};
+//     `
+// })
 
 window.addEventListener('scroll', () => {
         this.scrollY > 30 ? navbar.classList.add('sticky') : navbar.classList.remove('sticky');
