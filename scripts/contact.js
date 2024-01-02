@@ -1,3 +1,5 @@
+/*
+NO LONGER NEEDED THANKS TO PLACEHOLDERS!!
 // ----------FINDING ELEMENTS----------
 const inputFields = document.querySelectorAll('.input-group');
 
@@ -42,3 +44,4 @@ inputFields.forEach((field) => {
     input.addEventListener('blur', emptyFieldCheck);
 });
 
+*/

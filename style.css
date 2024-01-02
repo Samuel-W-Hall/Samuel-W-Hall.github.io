@@ -292,7 +292,7 @@ input, textarea {
     font-size: 15px;
 }
 
-label {
+/* label {
     height: 100%;
     position: absolute;
     left: 0;
@@ -301,7 +301,7 @@ label {
     color: #222222;
     opacity: 0.5;
     cursor: text;
-}
+} */
 
 .send-btn {
     font-size: 15px;
