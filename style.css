@@ -5,6 +5,10 @@
     --light-color: #7BC8FF;
 }
 
+html {
+    scroll-padding-top: 100px; /* height of sticky header */
+  }
+
 /* ----------SVG ANIMATION---------- */
 svg {
     /* border: green solid; */
@@ -162,9 +166,16 @@ html {
     right:0;
     z-index:-5; /* needed to keep in the background */
     background: url("images/background.jpg");
+    /* background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
+}
+
+.blur {
+    height: 100%;
+    width: 100%;
+    /* backdrop-filter: blur(3px); */
 }
 
 .background {
@@ -178,7 +189,7 @@ html {
 
 .section {
     /* background-color: #fff; */
-    padding: 100px 30px;
+    padding: 30px 30px;
     position: relative;
 }
 
@@ -319,7 +330,8 @@ input, textarea {
 
 /* ----------Utility Classes---------- */
 .yellow {
-    background: #ffe493;
+    background: rgb(255,233,166);
+    background: linear-gradient(90deg, rgba(255,233,166,1) 0%, rgba(255,234,171,1) 60%, rgba(255,214,90,1) 100%);
 }
 
 .white {
