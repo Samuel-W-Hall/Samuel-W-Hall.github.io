@@ -194,9 +194,13 @@ html {
 }
 
 .title {
-    padding: 30px 0px 30px;
+    padding: 0px 0px 30px;
     position: relative;
     z-index: 1;
+}
+
+.hero {
+    padding-top: 40px;
 }
 
 .title h1{
@@ -325,12 +329,6 @@ input, textarea {
     text-align: start;
 }
 
-/* ----------BLOG---------- */
-.blog {
-    padding: 150px 0;
-}
-
-
 /* ----------Utility Classes---------- */
 .yellow {
     background: rgb(255,233,166);
@@ -380,4 +378,44 @@ h2 {
     padding: 10px;
     font-size: 25px;
     font-weight: 500;
+}
+
+/* ----------BLOG---------- */
+.blog {
+    height: 100%;
+    padding-top: 100px;
+}
+
+.blog .title {
+    text-align: center;
+}
+
+.grid-container {
+    margin: auto;
+    width: 80vw;
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+}
+
+.grid-item {
+    margin: 0 auto;
+    padding: 10px;
+    border: solid darkgrey;
+    /* border-radius: 15px; */
+}
+
+.grid-item h3, p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+img.thumbnail {
+    /* border-top-left-radius: 10px; */
+    /* border-top-right-radius: 10px; */
+    /* object-fit: cover; */
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5px;
 }
