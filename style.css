@@ -98,6 +98,7 @@ html {
 
 .navbar .content {
     /* text-align: center; */
+    /* padding: 30px; */
     display: flex;
     align-items: center;
     height: 70px;
@@ -417,7 +418,9 @@ h4 {
 
 .grid-item h3, p {
     margin: 0 auto;
-    text-align: center;
+    padding: 2px;
+    font-size: 15px;
+    /* text-align: center; */
 }
 
 img.thumbnail {
