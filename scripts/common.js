@@ -6,8 +6,8 @@ const cancelBtn = document.querySelector('.cancel-btn');
 const aboutBtn = document.querySelector('.about-btn');
 const aboutSection = document.querySelector('.about');
 const scrollBtns = document.querySelectorAll('.scroll-btn');
-
-
+const currentYear = new Date().getFullYear();
+// console.log(currentYear)
 
 // CALLBACK FUNCTIONS
 const hideMenu = function() {
@@ -30,3 +30,5 @@ menuBtn.addEventListener('click', function() {
 });
 
 cancelBtn.addEventListener('click', hideMenu);
+
+document.querySelector('.copyright').textContent = `©️ Samuel Hall ${currentYear}`;

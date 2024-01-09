@@ -59,8 +59,7 @@ svg {
     transform: translateX(0%);
     opacity: 1;
 }
-
-
+/* ----------------------------- */
 
 * {
     margin: 0;
@@ -203,7 +202,7 @@ html {
     padding-top: 40px;
 }
 
-.title h1{
+h1 {
     font-size: 35px;
     font-weight: 500;
     color: #222222;
@@ -266,7 +265,7 @@ html {
 }
 
 @media (min-width: 800px) {
-    .title h1 {
+    h1 {
         font-size: 50px;
     }
 }
@@ -325,9 +324,9 @@ input, textarea {
     position: relative;
 }
 
-.projects .title h1 {
+/* .projects h1 {
     text-align: start;
-}
+} */
 
 /* ----------Utility Classes---------- */
 .yellow {
@@ -378,6 +377,16 @@ h2 {
     padding: 10px;
     font-size: 25px;
     font-weight: 500;
+}
+
+footer {
+    background-color: darkslategrey;
+}
+
+h4 {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
 }
 
 /* ----------BLOG---------- */
